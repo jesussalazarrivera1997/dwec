@@ -1,37 +1,29 @@
-
-<html land="es">
+<!DOCTYPE HTML>
+<html>
 <head>
- <meta charset="utf-8" />
- <title>Drag & drop</title>
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
 
- <link rel="stylesheet" type="text/css" href="estilo.css">
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
 
- <script src="ejercicio9.js"></script>
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
 </head>
 <body>
- <header>
-  <h1> Un ejemplo del uso de Drag & Drop en HTML5 </h1>
- </header>
+<script src="ejercicio9.js"></script>
+    
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)" ></div>
 
- <section>
-  <div id="cuadro1" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
+<img id="drag1" src="img_logo.gif" draggable="true"
+ondragstart="drag(event)" width="30" height="30">
 
-   <div class="cuadradito" id="arrastrable1" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    1
-   </div>   
-   <div class="cuadradito" id="arrastrable2" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    2
-   </div>
-   <div class="cuadradito" id="arrastrable3" draggable="true" ondragstart="start(event)" ondragend="end(event)">
-    3
-   </div>
-  </div>
-  <div id="cuadro2" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return drop(event)">
-  </div>
-  <div id="cuadro3" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return clonar(event)">
-   Clonadora
-  </div>
-  <div id="papelera" ondragenter="return enter(event)" ondragover="return over(event)" ondragleave="return leave(event)" ondrop="return eliminar(event)">Papelera</div>
- </section>
 </body>
 </html>
