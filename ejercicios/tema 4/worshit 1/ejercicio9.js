@@ -13,7 +13,7 @@ function creaTables(ancho, alto, numfilas, numcolum) {
             if (contador % 2 == 0) {
                 document.write("<td bgcolor=\"white\" width=\"50\" id=\""+contador+"\" ondrop=\"drop(event)\" ondragover=\"allowDrop(event)\" >&nbsp;</td>");
             } else {
-                document.write("<td bgcolor=\"black\" width=\"50\" id=\""+contador+"\" ondrop=\"drop(event)\" ondragover=\"allowDrop(event)\">&nbsp;</td>");
+                document.write("<td bgcolor=\"black\" width=\"50\" >&nbsp;</td>");
             };
             contador++;
         };
