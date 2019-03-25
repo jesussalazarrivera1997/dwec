@@ -1,0 +1,8 @@
+
+
+
+los objetos devieltos de la api duncionan como un 
+json en el que los objetos funcionan :
+Poster ==> esta es la imagen de la peli 
+Plot ==> este es la  descripcion de la peli 
+

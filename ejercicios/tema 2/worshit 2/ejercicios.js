@@ -44,6 +44,3 @@ function SenTable(){
     }
     document.write("</table>")
 }
-/*ejercicio 9
-
-*/

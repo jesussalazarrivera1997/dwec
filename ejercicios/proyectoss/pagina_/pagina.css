@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    background-color: #F0F0F0;
+    font-family: 'Liberation Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+#images {
+    margin: 0 auto;
+    padding: 0;
+    width: 640px;
+    list-style-type: none;
+} 
+#cabecera{
+    border-block-end-color: blue;
+    border: 2px;
+    color: black;
+    background-color: aqua;
+    text-align: center;
+}
+#cuerpo{
+    border-block-end-color: blueviolet;
+    border: 2px;
+    color: blanchedalmond;
+    background-color: blue;
+    text-align: center;
+}
+
+#lateralDerecho{
+    display: none;
+}
+#lateralDerechoB{
+    float: right;
+    width: 20%;
+    height: 20%;
+    display: block;
+}
